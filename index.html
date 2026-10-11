@@ -1,464 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Learn Portuguese from Portugal with Rita</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
-      rel="stylesheet"
-    />
-    <style>
-      .gradient {
-        background: linear-gradient(90deg, #2f96a8 0%, #2f96a8 100%);
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Rita Faria — Learn European Portuguese with Rita</title>
+  <meta name="description" content="Learn Portuguese from Portugal with Rita — native teacher at BabeliUM, University of Minho. Master in Translation, author and co-founder of Portuguese from Portugal. Online or in person in Braga, Portugal classes tailored to your needs." />
+  <meta name="author" content="Rita Faria" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#FAF7F1',
+            cream: '#F3ECE1',
+            ink: '#1C1917',
+            muted: '#78716C',
+            pine: '#1A2E28',
+            moss: '#2E4038',
+            clay: '#C05621',
+            claydark: '#9C4218',
+            gold: '#C9A86A',
+            goldlight: '#F0E3C8',
+            tile: '#1E4A7A',
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            soft: '0 20px 60px -20px rgba(28,25,23,.18)',
+            card: '0 12px 32px -12px rgba(28,25,23,.18)',
+          }
+        }
       }
-      h1 {
-        scroll-margin-top: 120px;
-      }
-      h3 {
-        scroll-margin-top: 100px;
-      }
-    </style>
-  </head>
-  <body
-    class="leading-normal tracking-normal text-white gradient"
-    style="font-family: 'Source Sans Pro', sans-serif"
-  >
-    <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white">
-      <div
-        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
-      >
-        <div class="pl-4 flex items-center">
-          <a
-            class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-            href="#"
-          >
-            <svg
-              class="h-8 fill-current inline"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-            >
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path
-                d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"
-              />
-            </svg>
-            Learn with Rita
-          </a>
-        </div>
-        <div class="block lg:hidden pr-4">
-          <button
-            id="nav-toggle"
-            class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-          >
-            <svg
-              class="fill-current h-6 w-6"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-        <div
-          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
-          id="nav-content"
-        >
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-3">
-              <a
-                class="inline-block py-2 px-4 toggleColour text-white no-underline"
-                href="#what-i-offer"
-                >What I Offer</a
-              >
-            </li>
-            <li class="mr-3">
-              <a
-                class="inline-block py-2 px-4 toggleColour text-white no-underline"
-                href="#my-experience"
-                >My Experience
-              </a>
-            </li>
-            <li class="mr-3">
-              <a
-                class="inline-block py-2 px-4 toggleColour text-white no-underline"
-                href="#types-of-lessons"
-                >Types of Lessons</a
-              >
-            </li>
-          </ul>
-          <button
-            id="navAction"
-            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-            onclick="location.href='#book-a-lesson'"
-          >
-            Book a Lesson
-          </button>
-        </div>
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: #FAF7F1; color: #1C1917; -webkit-font-smoothing: antialiased; }
+    .serif { font-family: 'Fraunces', Georgia, serif; }
+    section { scroll-margin-top: 96px; }
+    h1, h2, h3 { scroll-margin-top: 110px; }
+    .arch { border-radius: 999px 999px 28px 28px; }
+    .grain::after {
+      content:""; position:absolute; inset:0; pointer-events:none; opacity:.06; mix-blend-mode:multiply;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .reveal { opacity:0; transform: translateY(18px); transition: all .7s cubic-bezier(.22,1,.36,1); }
+    .reveal.visible { opacity:1; transform:none; }
+    .link-underline { background-image: linear-gradient(currentColor,currentColor); background-size: 0% 1.5px; background-repeat:no-repeat; background-position: left 100%; transition: background-size .3s; }
+    .link-underline:hover { background-size: 100% 1.5px; }
+    ::selection { background:#1A2E28; color:#FAF7F1; }
+  </style>
+</head>
+<body class="bg-paper text-ink">
+
+  <!-- Announcement -->
+  <div class="bg-pine text-paper text-[13px] tracking-wide">
+    <div class="max-w-6xl mx-auto px-5 py-2.5 flex items-center justify-center gap-2 text-center">
+      <span class="inline-flex w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
+      <p>Now booking — <strong class="font-semibold">Online or in person in Braga, Portugal</strong> classes · Short intro chat to start</p>
+      <a href="#book-a-lesson" class="hidden sm:inline underline underline-offset-4 decoration-gold hover:text-goldlight">Book a lesson →</a>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header id="header" class="sticky top-0 z-50 bg-paper/90 backdrop-blur-md border-b border-ink/10 transition-all">
+    <div class="max-w-6xl mx-auto px-5 h-[72px] flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3 group">
+        <span class="w-11 h-11 rounded-full bg-pine text-paper serif font-semibold text-[15px] tracking-wide flex items-center justify-center border border-gold/40 group-hover:bg-moss transition">RF</span>
+        <span class="leading-none">
+          <span class="block serif font-semibold text-[19px]">Rita Faria</span>
+          <span class="block text-[12px] uppercase tracking-[0.14em] text-muted mt-1">Learn with Rita</span>
+        </span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium">
+        <a href="#what-i-offer" class="link-underline text-ink/80 hover:text-ink">What I Offer</a>
+        <a href="#my-experience" class="link-underline text-ink/80 hover:text-ink">Experience</a>
+        <a href="#types-of-lessons" class="link-underline text-ink/80 hover:text-ink">Lessons</a>
+        <a href="https://www.portuguesefromportugal.com/books/" target="_blank" rel="noopener" class="link-underline text-ink/80 hover:text-ink">Book</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#book-a-lesson" class="hidden sm:inline-flex items-center gap-2 bg-ink text-paper text-[15px] font-semibold px-5 py-2.5 rounded-full hover:bg-pine transition shadow-card">
+          Book a Lesson <span aria-hidden="true">→</span>
+        </a>
+        <button id="nav-toggle" aria-label="Open menu" class="md:hidden w-11 h-11 rounded-full border border-ink/15 flex items-center justify-center">
+          <svg id="icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
       </div>
-      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
-    </nav>
-    <!--Hero-->
-    <div class="pt-24">
-      <div
-        class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center"
-      >
-        <!--Left Col-->
-        <div
-          class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"
-        >
-          <h1 class="my-4 text-5xl font-bold leading-tight">
-            Learn Portuguese from Portugal with a native!
+    </div>
+    <div id="nav-content" class="md:hidden hidden border-t border-ink/10 bg-paper px-5 py-4">
+      <nav class="flex flex-col gap-1 text-[16px] font-medium">
+        <a href="#what-i-offer" class="py-3 border-b border-ink/10">What I Offer</a>
+        <a href="#my-experience" class="py-3 border-b border-ink/10">My Experience</a>
+        <a href="#types-of-lessons" class="py-3 border-b border-ink/10">Types of Lessons</a>
+        <a href="#book-a-lesson" class="mt-3 inline-flex justify-center bg-ink text-paper font-semibold px-5 py-3 rounded-full">Book a Lesson</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -top-24 -right-24 w-[520px] h-[520px] rounded-full bg-goldlight/60 blur-3xl"></div>
+        <div class="absolute top-64 -left-32 w-[420px] h-[420px] rounded-full bg-[#E6DDC9] blur-3xl"></div>
+      </div>
+      <div class="max-w-6xl mx-auto px-5 pt-12 pb-10 md:pt-20 md:pb-16 grid md:grid-cols-[1.05fr_.95fr] gap-12 items-center relative">
+        <div class="reveal visible">
+          <div class="inline-flex items-center gap-2 bg-white border border-ink/10 rounded-full pl-1.5 pr-4 py-1.5 text-[13px] font-medium shadow-sm">
+            <span class="bg-pine text-paper text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-full">Native</span>
+            <span class="text-ink/70">European Portuguese teacher — Online or in person in Braga, Portugal</span>
+          </div>
+          <h1 class="serif text-[44px] leading-[1.02] md:text-[68px] font-semibold mt-6 tracking-tight">
+            Learn Portuguese from Portugal <em class="font-medium italic text-pine">with Rita.</em>
           </h1>
-          <p class="leading-normal text-2xl mb-8">
-            Remote/in-person classes tailored to your needs
+          <p class="text-[19px] md:text-[21px] leading-relaxed text-ink/70 mt-5 max-w-xl">
+            Classes tailored to your needs — vocabulary, grammar, reading and speaking, at your pace.
           </p>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <a href="#book-a-lesson" class="inline-flex items-center gap-2 bg-clay hover:bg-claydark text-white font-semibold px-7 py-3.5 rounded-full transition shadow-card text-[16px]">
+              Book a lesson <span aria-hidden="true">→</span>
+            </a>
+            <a href="#types-of-lessons" class="inline-flex items-center gap-2 bg-white border border-ink/15 hover:border-ink/40 font-semibold px-7 py-3.5 rounded-full transition text-[16px]">
+              Explore lessons
+            </a>
+          </div>
+          <dl class="grid grid-cols-3 gap-2 sm:gap-4 mt-10 max-w-lg">
+            <div class="bg-white/70 backdrop-blur border border-ink/10 rounded-2xl p-3 sm:p-4 min-w-0">
+              <dt class="text-[10px] sm:text-[12px] uppercase tracking-wider text-muted break-words">Qualification</dt>
+              <dd class="font-semibold text-[13px] sm:text-[15px] leading-snug mt-1">Master in Translation</dd>
+            </div>
+            <div class="bg-white/70 backdrop-blur border border-ink/10 rounded-2xl p-3 sm:p-4 min-w-0">
+              <dt class="text-[10px] sm:text-[12px] uppercase tracking-wider text-muted break-words">Teaches</dt>
+              <dd class="font-semibold text-[13px] sm:text-[15px] leading-snug mt-1">A1 – C1 · CEFR</dd>
+            </div>
+            <div class="bg-white/70 backdrop-blur border border-ink/10 rounded-2xl p-3 sm:p-4 min-w-0">
+              <dt class="text-[10px] sm:text-[12px] uppercase tracking-wider text-muted break-words">Format</dt>
+              <dd class="font-semibold text-[13px] sm:text-[15px] leading-snug mt-1">60 min · 1:1</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="relative reveal visible">
+          <div class="relative max-w-[420px] mx-auto">
+            <div class="absolute -inset-3 rounded-[32px] border border-gold/60"></div>
+            <div class="relative overflow-hidden arch shadow-soft border-[6px] border-white bg-cream aspect-[4/5]">
+              <img src="offer.jpg" alt="Rita Faria — Portuguese teacher" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute -left-4 md:-left-10 bottom-8 bg-white rounded-2xl shadow-card border border-ink/10 px-4 py-3 flex items-center gap-2.5">
+              <span class="w-10 h-10 rounded-full bg-clay text-white flex items-center justify-center font-serif">✎</span>
+              <p class="text-[14px] font-bold leading-none">Author</p>
+            </div>
+            <div class="absolute -right-4 md:-right-10 bottom-8 bg-white rounded-2xl shadow-card border border-ink/10 px-4 py-3 flex items-center gap-2.5">
+              <span class="w-10 h-10 rounded-full bg-clay text-white flex items-center justify-center">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h9"/><path d="M8.5 3v2c0 3.5-2.5 6.5-5.5 8"/><path d="M6 9c1.2 2.2 3.2 3.9 5.8 4.5"/><path d="M12.5 21l4.5-10 4.5 10"/><path d="M14.2 17h5.6"/></svg>
+              </span>
+              <p class="text-[14px] font-bold leading-none">Translator</p>
+            </div>
+            <div class="absolute -right-3 md:-right-6 top-6 bg-pine text-paper rounded-2xl shadow-card px-4 py-3 rotate-2">
+              <p class="serif italic text-[15px] leading-none">Olá! Vamos aprender?</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="relative -mt-12 lg:-mt-24">
-      <svg
-        viewBox="0 0 1428 174"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g
-            transform="translate(-2.000000, 44.000000)"
-            fill="#FFFFFF"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-              opacity="0.100000001"
-            ></path>
-            <path
-              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-              opacity="0.100000001"
-            ></path>
-            <path
-              d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-              id="Path-4"
-              opacity="0.200000003"
-            ></path>
-          </g>
-          <g
-            transform="translate(-4.000000, 76.000000)"
-            fill="#FFFFFF"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
-            ></path>
-          </g>
-        </g>
-      </svg>
-    </div>
-    <section class="bg-white border-b py-8">
-      <div class="container max-w-5xl mx-auto m-8">
-        <h1
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
-        ></h1>
-        <div class="flex flex-wrap">
-          <div class="w-5/6 sm:w-1/2 p-6">
-            <h3
-              id="what-i-offer"
-              class="text-3xl text-gray-800 font-bold leading-none mb-3"
-            >
-              What I offer?
-            </h3>
-            <p class="text-gray-600 mb-8">
-              Classes of 60 min each with a native Portuguese speaker. During
-              the classes we will practice vocabulary, grammar, reading
-              comprehension and speaking according to your level and area of
-              interest. The Portuguese language has a challenging way of
-              pronouncing words and I can help you become more comfortable in
-              your style of speaking. I can also assist you correcting home work
-              exercises and proofreading your texts.
-              <br />
-              <br />
-              In order to achieve a holistic comprehension of the Portuguese
-              language, I use not only a textbook, but also poems, Portuguese
-              texts, music lyrics. This way will help you to understand not only
-              the language but also the culture from Portugal, because language
-              and culture are always together.
-              <br />
-              <br />
-            </p>
-          </div>
-          <div class="w-full sm:w-1/2 p-6 mt-6">
-            <img
-              src="offer.jpg"
-              class="rounded-full h-72 w-72 flex items-center justify-center"
-            />
+
+      <!-- credentials strip -->
+      <div class="max-w-6xl mx-auto px-5 pb-12">
+        <div class="bg-pine text-paper rounded-3xl px-6 py-6 md:px-10 md:py-7 flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-10 shadow-soft relative overflow-hidden grain">
+          <p class="text-[12px] uppercase tracking-[0.18em] text-goldlight/80 shrink-0">Trusted experience</p>
+          <div class="grid sm:grid-cols-3 gap-5 text-[15px] w-full">
+            <p><strong class="font-semibold">BabeliUM · UMinho</strong><br/><span class="text-paper/70">Language Centre, University of Minho</span></p>
+            <p><strong class="font-semibold">Portuguese from Portugal</strong><br/><span class="text-paper/70">Co-founder, learning platform</span></p>
+            <p><strong class="font-semibold">Private tutoring</strong><br/><span class="text-paper/70">Conversation · Textbook · Proofreading</span></p>
           </div>
         </div>
-        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-          <div class="w-full sm:w-1/2 p-6 mt-6">
-            <img
-              src="experience.jpg"
-              class="rounded-full h-72 w-72 flex items-center justify-center"
-            />
+      </div>
+    </section>
+
+    <!-- What I offer -->
+    <section id="what-i-offer" class="max-w-6xl mx-auto px-5 py-10 md:py-20">
+      <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
+        <div class="order-2 md:order-1 reveal">
+          <div class="relative">
+            <div class="rounded-[28px] overflow-hidden shadow-soft border-[6px] border-white aspect-[4/3] bg-cream">
+              <img src="experience.jpg" alt="Learning Portuguese — culture and language" class="w-full h-full object-cover" />
+            </div>
+            <div class="mt-4 grid grid-cols-2 gap-4">
+              <div class="bg-white border border-ink/10 rounded-2xl p-4">
+                <p class="serif text-2xl font-semibold">60<span class="text-base font-sans font-medium text-muted"> min</span></p>
+                <p class="text-[13px] text-ink/60 mt-1">Focused 1:1 classes with a native speaker</p>
+              </div>
+              <div class="bg-white border border-ink/10 rounded-2xl p-4">
+                <p class="serif text-xl font-semibold leading-tight">European Portuguese</p>
+                <p class="text-[13px] text-ink/60 mt-1">Pronunciation, culture & real usage</p>
+              </div>
+            </div>
           </div>
-          <div class="w-full sm:w-1/2 p-6 mt-6">
-            <div class="align-middle">
-              <h3
-                id="my-experience"
-                class="text-3xl text-gray-800 font-bold leading-none mb-3"
-              >
-                My Experience
-              </h3>
-              <p class="text-gray-600 mb-8">
-                I am a Master in Translation and I have experience teaching
-                Portuguese as a second language at the Munich Community college
-                (Volkshochschule München) and also private tutoring.
-                <br />
-                <br />
-                I am the author of a Portuguese learning book called "<a
-                  class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  href="https://www.portuguesefromportugal.com/books/"
-                  >Learn Portuguese with Poetry</a
-                >"
-                <br />
-                <br />
-                I am the co-founder of the learning platform
-                <a
-                  class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  href="https://www.portuguesefromportugal.com"
-                  >https://www.portuguesefromportugal.com</a
-                >
-                as well as content creator for my private blog
-                <a
-                  class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  href="http://www.ritafaria.com/"
-                  >http://www.ritafaria.com/</a
-                >
-                and
-                <a
-                  class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  href="https://m.facebook.com/reading.in.focus/"
-                  >https://m.facebook.com/reading.in.focus/</a
-                >
-              </p>
+        </div>
+        <div class="order-1 md:order-2 reveal">
+          <p class="text-[13px] font-semibold uppercase tracking-[0.18em] text-clay">01 — What I offer</p>
+          <h2 class="serif text-4xl md:text-5xl font-semibold tracking-tight mt-3">What I offer?</h2>
+          <div class="w-16 h-1 bg-gold rounded-full mt-4"></div>
+          <div class="prose prose-stone mt-6 text-[17px] leading-relaxed text-ink/75 space-y-4">
+            <p>Classes of 60 minutes with a native Portuguese speaker. During the classes we will practice vocabulary, grammar, reading comprehension and speaking according to your level and area of interest. The Portuguese language has a challenging way of pronouncing words and I can help you become more comfortable in your style of speaking. I can also assist you correcting home work exercises and proofreading your texts.</p>
+            <p>In order to achieve a holistic comprehension of the Portuguese language, I use not only a textbook, but also poems, Portuguese texts, music lyrics. This way will help you to understand not only the language but also the culture from Portugal, because language and culture are always together.</p>
+          </div>
+          <ul class="mt-7 grid sm:grid-cols-2 gap-3 text-[15px]">
+            <li class="flex gap-2.5 bg-white border border-ink/10 rounded-xl px-4 py-3"><span class="text-pine font-bold">✓</span> Vocabulary & grammar</li>
+            <li class="flex gap-2.5 bg-white border border-ink/10 rounded-xl px-4 py-3"><span class="text-pine font-bold">✓</span> Reading comprehension</li>
+            <li class="flex gap-2.5 bg-white border border-ink/10 rounded-xl px-4 py-3"><span class="text-pine font-bold">✓</span> Speaking & pronunciation</li>
+            <li class="flex gap-2.5 bg-white border border-ink/10 rounded-xl px-4 py-3"><span class="text-pine font-bold">✓</span> Homework & proofreading</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="my-experience" class="bg-cream/60 border-y border-ink/10">
+      <div class="max-w-6xl mx-auto px-5 py-12 md:py-20 grid md:grid-cols-[1fr_.9fr] gap-12">
+        <div class="reveal">
+          <p class="text-[13px] font-semibold uppercase tracking-[0.18em] text-clay">02 — About Rita</p>
+          <h2 class="serif text-4xl md:text-5xl font-semibold tracking-tight mt-3">My Experience</h2>
+          <div class="w-16 h-1 bg-gold rounded-full mt-4"></div>
+          <div class="text-[17px] leading-relaxed text-ink/75 mt-6 space-y-4">
+            <p>I am a Master in Translation and I currently teach Portuguese as a foreign language at <a class="underline decoration-gold decoration-2 underline-offset-4 font-medium text-ink hover:text-clay" href="https://babelium.elach.uminho.pt/index.php/en/babelium-en/">BabeliUM — the Language Centre of the University of Minho</a>, alongside private tutoring.</p>
+            <p>Previously, I taught Portuguese as a foreign language at the Munich Community college (Volkshochschule München).</p>
+            <p>I am the author of two European Portuguese learning books — “<a class="underline decoration-gold decoration-2 underline-offset-4 font-medium text-ink hover:text-clay" href="https://www.portuguesefromportugal.com/books/#daily-european-portuguese100-most-common-verbs">Daily European Portuguese: 100 Most Common Verbs</a>” and “<a class="underline decoration-gold decoration-2 underline-offset-4 font-medium text-ink hover:text-clay" href="https://www.portuguesefromportugal.com/books/#aprender-portugu%C3%AAs-com-poesialearn-portuguese-with-poetry">Aprender Português com Poesia – Learn Portuguese with Poetry</a>” (see <a class="underline decoration-gold decoration-2 underline-offset-4 font-medium text-ink hover:text-clay" href="https://www.portuguesefromportugal.com/books/">all books</a>).</p>
+            <p>I am the co-founder of the learning platform <a class="underline decoration-gold decoration-2 underline-offset-4 font-medium text-ink hover:text-clay" href="https://www.portuguesefromportugal.com">Portuguese from Portugal</a> as well as content creator for my private blog <a class="underline decoration-gold decoration-2 underline-offset-4 font-medium text-ink hover:text-clay" href="http://www.ritafaria.com/">Rita Faria</a> and <a class="underline decoration-gold decoration-2 underline-offset-4 font-medium text-ink hover:text-clay" href="https://m.facebook.com/reading.in.focus/">Reading in Focus</a></p>
+          </div>
+          <div class="mt-8 space-y-0 border-l-2 border-pine/15 ml-2">
+            <div class="pl-6 pb-6 relative">
+              <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-pine"></span>
+              <p class="text-[13px] uppercase tracking-wider text-muted font-semibold">Education</p>
+              <p class="font-semibold">Master in Translation</p>
+              <p class="text-ink/60 text-[15px]">University of Minho, Portugal</p>
+            </div>
+            <div class="pl-6 pb-6 relative">
+              <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-pine"></span>
+              <p class="text-[13px] uppercase tracking-wider text-muted font-semibold">Teaching — current</p>
+              <p class="font-semibold">BabeliUM, University of Minho + private tutoring</p>
+              <p class="text-ink/60 text-[15px]">Portuguese as a foreign language · Braga</p>
+            </div>
+            <div class="pl-6 pb-6 relative">
+              <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-pine/40"></span>
+              <p class="text-[13px] uppercase tracking-wider text-muted font-semibold">Teaching – Past Experience</p>
+              <p class="font-semibold">VHS München (Volkshochschule München)</p>
+              <p class="text-ink/60 text-[15px]">Portuguese as a foreign language · Munich</p>
+            </div>
+            <div class="pl-6 relative">
+              <span class="absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-clay"></span>
+              <p class="text-[13px] uppercase tracking-wider text-muted font-semibold">Projects</p>
+              <p class="font-semibold">Author, translator & co-founder</p>
+              <p class="text-ink/60 text-[15px]">2 books, full book translations, platform & blog</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="bg-pine text-paper rounded-[28px] p-8 md:p-10 shadow-soft relative overflow-hidden grain h-full flex flex-col">
+            <p class="text-[12px] uppercase tracking-[0.2em] text-gold">Featured publications</p>
+            <h3 class="serif text-3xl md:text-4xl font-semibold mt-3 leading-tight">Books by Rita</h3>
+            <p class="text-paper/75 mt-4 leading-relaxed">Two European Portuguese learning books — verbs for daily practice, poetry for language and culture.</p>
+            <div class="grid sm:grid-cols-2 gap-4 mt-7">
+              <a href="https://www.portuguesefromportugal.com/books/#daily-european-portuguese100-most-common-verbs" target="_blank" rel="noopener" class="group bg-paper text-ink rounded-2xl overflow-hidden block hover:-translate-y-1 transition duration-300">
+                <img src="book-verbs.jpg" alt="Daily European Portuguese – 100 Most Common Verbs book cover" class="w-full aspect-[3/4] object-cover" />
+                <span class="block p-4">
+                  <span class="block text-[11px] font-bold uppercase tracking-wider text-clay">New · 200+ pages</span>
+                  <span class="block font-bold text-[15px] leading-snug mt-1">Daily European Portuguese: 100 Most Common Verbs</span>
+                  <span class="block text-[13px] text-ink/60 mt-1.5 leading-snug">One verb per day — conjugations, examples, exercises & answers.</span>
+                </span>
+              </a>
+              <a href="https://www.portuguesefromportugal.com/books/#aprender-portugu%C3%AAs-com-poesialearn-portuguese-with-poetry" target="_blank" rel="noopener" class="group bg-paper text-ink rounded-2xl overflow-hidden block hover:-translate-y-1 transition duration-300">
+                <img src="book-poetry.jpg" alt="Aprender Português com Poesia – Learn Portuguese with Poetry book cover" class="w-full aspect-[3/4] object-cover" />
+                <span class="block p-4">
+                  <span class="block text-[11px] font-bold uppercase tracking-wider text-clay">Bilingual PT · EN</span>
+                  <span class="block font-bold text-[15px] leading-snug mt-1">Aprender Português com Poesia – Learn Portuguese with Poetry</span>
+                  <span class="block text-[13px] text-ink/60 mt-1.5 leading-snug">Poems with grammar exercises and glossaries.</span>
+                </span>
+              </a>
+            </div>
+            <div class="flex flex-wrap gap-3 mt-7">
+              <a href="https://www.portuguesefromportugal.com/books/" target="_blank" rel="noopener" class="inline-flex bg-paper text-ink font-semibold px-6 py-3 rounded-full hover:bg-goldlight transition text-[15px]">View all books →</a>
+              <a href="https://www.portuguesefromportugal.com" target="_blank" rel="noopener" class="inline-flex border border-paper/30 hover:border-paper font-semibold px-6 py-3 rounded-full transition text-[15px]">Learning platform</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-white border-b py-8">
-      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-        <h1
-          id="types-of-lessons"
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
-        >
-          Types of Lessons
-        </h1>
-        <div class="w-full mb-4">
-          <div
-            class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-          ></div>
-        </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div
-            class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-          >
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <div
-                class="w-full font-bold text-xl text-center text-gray-800 p-6"
-              >
-                CONVERSATION
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                Classes focus on conversation of topics chosen by the student or
-                previously agreed with the teacher that would improve the
-                student speaking.
-              </p>
-            </a>
+
+    <!-- Types of lessons -->
+    <section id="types-of-lessons" class="max-w-6xl mx-auto px-5 py-12 md:py-20">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <p class="text-[13px] font-semibold uppercase tracking-[0.18em] text-clay">03 — Services</p>
+        <h2 class="serif text-4xl md:text-5xl font-semibold tracking-tight mt-3">Types of Lessons</h2>
+        <div class="w-16 h-1 bg-gold rounded-full mt-4 mx-auto"></div>
+        <p class="text-ink/60 mt-4 text-[17px]">Three focused formats — pick one or combine them in your learning plan.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-5 mt-10">
+        <article class="reveal bg-white rounded-[24px] border border-ink/10 shadow-card p-8 flex flex-col hover:-translate-y-1 hover:shadow-soft transition duration-300">
+          <span class="w-12 h-12 rounded-2xl bg-goldlight text-pine flex items-center justify-center text-xl">◐</span>
+          <h3 class="font-bold text-[13px] uppercase tracking-[0.14em] mt-6 text-pine">Conversation</h3>
+          <p class="text-[16px] leading-relaxed text-ink/70 mt-3 flex-1">Classes focus on conversation of topics chosen by the student or previously agreed with the teacher that would improve the student speaking.</p>
+          <p class="text-[13px] font-semibold text-muted mt-6 pt-5 border-t border-ink/10">✓ Speaking confidence · pronunciation</p>
+        </article>
+        <article class="reveal bg-pine text-paper rounded-[24px] shadow-soft p-8 flex flex-col hover:-translate-y-1 transition duration-300 relative overflow-hidden grain">
+          <div class="flex items-center justify-between">
+            <span class="w-12 h-12 rounded-2xl bg-paper/15 flex items-center justify-center text-xl">✎</span>
+            <span class="text-[12px] font-bold uppercase tracking-wider bg-gold text-ink px-3 py-1.5 rounded-full">A1 – C1 · CEFR</span>
           </div>
+          <h3 class="font-bold text-[13px] uppercase tracking-[0.14em] mt-6 text-gold">Textbook</h3>
+          <p class="text-[16px] leading-relaxed text-paper/80 mt-3 flex-1">Classes that follow a textbook and teach you through exercises aimed to improve your grammar and vocabulary. I follow the common European framework of reference for languages and I can teach A1 - C1.</p>
+          <p class="text-[13px] font-semibold text-paper/60 mt-6 pt-5 border-t border-paper/15">✓ Structured grammar · vocabulary</p>
+        </article>
+        <article class="reveal bg-white rounded-[24px] border border-ink/10 shadow-card p-8 flex flex-col hover:-translate-y-1 hover:shadow-soft transition duration-300">
+          <span class="w-12 h-12 rounded-2xl bg-cream text-pine flex items-center justify-center text-xl">☰</span>
+          <h3 class="font-bold text-[13px] uppercase tracking-[0.14em] mt-6 text-pine">Correction & Proofreading</h3>
+          <p class="text-[16px] leading-relaxed text-ink/70 mt-3 flex-1">Correction and proofreading home work, exercises or different types of texts.</p>
+          <p class="text-[13px] font-semibold text-muted mt-6 pt-5 border-t border-ink/10">✓ Homework · exercises · texts</p>
+        </article>
+      </div>
+      <p class="text-center text-[15px] text-ink/60 mt-8">Not sure which fits? <a href="#book-a-lesson" class="font-semibold text-ink underline decoration-gold decoration-2 underline-offset-4 hover:text-clay">Start with a short intro chat →</a></p>
+    </section>
+
+    <!-- Book a lesson -->
+    <section id="book-a-lesson" class="max-w-6xl mx-auto px-5 pb-16 md:pb-24">
+      <div class="reveal relative overflow-hidden rounded-[32px] bg-ink text-paper shadow-soft">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute -top-32 -right-20 w-[420px] h-[420px] rounded-full bg-clay/30 blur-3xl"></div>
+          <div class="absolute -bottom-40 -left-20 w-[420px] h-[420px] rounded-full bg-gold/20 blur-3xl"></div>
         </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div
-            class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-          >
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <div
-                class="w-full font-bold text-xl text-center text-gray-800 p-6"
-              >
-                TEXTBOOK
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                Classes that follow a textbook and teach you through exercises
-                aimed to improve your grammar and vocabulary. I follow the
-                common European framework of reference for languages and I can
-                teach A1 - B2.
-              </p>
-            </a>
+        <div class="relative grid md:grid-cols-2 gap-10 p-8 md:p-14 items-center">
+          <div>
+            <p class="text-[13px] font-semibold uppercase tracking-[0.18em] text-gold">04 — Contact</p>
+            <h2 class="serif text-4xl md:text-[52px] leading-[1.05] font-semibold mt-3">Book a Lesson</h2>
+            <p class="text-[19px] text-paper/75 mt-4">Send me a message and we can arrange a short introduction chat</p>
+            <div class="flex flex-col sm:flex-row gap-3 mt-8">
+              <a href="mailto:contact@ritafaria.com" class="inline-flex justify-center items-center gap-2 bg-paper text-ink font-bold px-7 py-4 rounded-full hover:bg-goldlight transition text-[16px]">contact@ritafaria.com</a>
+              <a href="mailto:contact@ritafaria.com?subject=Intro%20chat%20—%20Portuguese%20lessons" class="inline-flex justify-center items-center gap-2 border border-paper/30 hover:border-paper font-semibold px-7 py-4 rounded-full transition text-[16px]">Say olá →</a>
+            </div>
+            <p class="text-[13px] text-paper/50 mt-5">60-min classes · Online or in person in Braga, Portugal · Tailored to your level & interests</p>
           </div>
-        </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div
-            class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-          >
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <div
-                class="w-full font-bold text-xl text-center text-gray-800 p-6"
-              >
-                CORRECTION AND PROOFREADING
+          <div class="bg-paper text-ink rounded-3xl p-7 md:p-8">
+            <div class="flex items-center gap-4">
+              <span class="w-12 h-12 rounded-full bg-pine text-paper serif font-semibold text-base tracking-wide flex items-center justify-center">RF</span>
+              <div>
+                <p class="font-bold text-[17px]">Rita Faria</p>
+                <p class="text-[13px] text-muted">Native teacher · Based in Braga, Portugal</p>
               </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                Correction and proofreading home work, exercises or different
-                types of texts.
-              </p>
-            </a>
+            </div>
+            <ol class="mt-6 space-y-4 text-[15px]">
+              <li class="flex gap-3"><span class="w-7 h-7 shrink-0 rounded-full bg-cream font-bold text-[13px] flex items-center justify-center">1</span><span><strong>Write to me</strong> <span class="text-ink/60">— tell me your level & goals</span></span></li>
+              <li class="flex gap-3"><span class="w-7 h-7 shrink-0 rounded-full bg-cream font-bold text-[13px] flex items-center justify-center">2</span><span><strong>Short intro chat</strong> <span class="text-ink/60">— we align on format & plan</span></span></li>
+              <li class="flex gap-3"><span class="w-7 h-7 shrink-0 rounded-full bg-cream font-bold text-[13px] flex items-center justify-center">3</span><span><strong>Start learning</strong> <span class="text-ink/60">— conversation, textbook or both</span></span></li>
+            </ol>
+            <img src="digital-card.jpg" alt="Rita Faria digital card" class="mt-6 rounded-2xl border border-ink/10 w-full object-cover aspect-[16/9]" onerror="this.style.display='none'" />
           </div>
         </div>
       </div>
     </section>
-    <svg
-      class="wave-top"
-      viewBox="0 0 1439 147"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-    >
-      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-          <g class="wave" fill="#f8fafc">
-            <path
-              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
-            ></path>
-          </g>
-          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
-            <g
-              transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) "
-            >
-              <path
-                d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                opacity="0.100000001"
-              ></path>
-              <path
-                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                opacity="0.100000001"
-              ></path>
-              <path
-                d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                opacity="0.200000003"
-              ></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-    <section class="container mx-auto text-center py-6 mb-12">
-      <h1
-        id="book-a-lesson"
-        class="w-full my-2 text-5xl font-bold leading-tight text-center text-white"
-      >
-        Book a Lesson
-      </h1>
-      <div class="w-full mb-4">
-        <div
-          class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"
-        ></div>
+  </main>
+
+  <footer class="border-t border-ink/10 bg-paper">
+    <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="w-10 h-10 rounded-full bg-pine text-paper serif font-semibold text-[13px] tracking-wide flex items-center justify-center">RF</span>
+        <div class="text-[14px]">
+          <p class="font-bold">Rita Faria — Learn with Rita</p>
+          <p class="text-muted">European Portuguese · Online or in person in Braga, Portugal</p>
+        </div>
       </div>
-      <h3 class="my-4 text-3xl leading-tight">
-        Send me a message and we can arrange a short introduction chat
-      </h3>
-      <h2 class="my-4 p-4 text-2xl leading-tight">
-        <a href="mailto:contact@ritafaria.com">contact@ritafaria.com</a>
-      </h2>
-    </section>
-    <script>
-      var scrollpos = window.scrollY;
-      var header = document.getElementById("header");
-      var navcontent = document.getElementById("nav-content");
-      var navaction = document.getElementById("navAction");
-      var brandname = document.getElementById("brandname");
-      var toToggle = document.querySelectorAll(".toggleColour");
+      <nav class="flex flex-wrap gap-x-6 gap-y-2 text-[14px] font-medium text-ink/70">
+        <a href="#what-i-offer" class="hover:text-ink">What I Offer</a>
+        <a href="#my-experience" class="hover:text-ink">Experience</a>
+        <a href="#types-of-lessons" class="hover:text-ink">Lessons</a>
+        <a href="https://www.portuguesefromportugal.com" target="_blank" rel="noopener" class="hover:text-ink">Portuguese from Portugal</a>
+        <a href="mailto:contact@ritafaria.com" class="hover:text-ink">Contact</a>
+      </nav>
+    </div>
+    <div class="max-w-6xl mx-auto px-5 pb-8 text-[13px] text-muted">© 2026 Rita Faria · Learn Portuguese from Portugal with Rita</div>
+  </footer>
 
-      document.addEventListener("scroll", function () {
-        /*Apply classes for slide in bar*/
-        scrollpos = window.scrollY;
+  <script>
+    // Mobile menu
+    var navMenuDiv = document.getElementById("nav-content");
+    var navMenu = document.getElementById("nav-toggle");
+    var iconOpen = document.getElementById("icon-open");
+    var iconClose = document.getElementById("icon-close");
+    function toggleMenu(force) {
+      var show = force !== undefined ? force : navMenuDiv.classList.contains("hidden");
+      navMenuDiv.classList.toggle("hidden", !show);
+      iconOpen.classList.toggle("hidden", show);
+      iconClose.classList.toggle("hidden", !show);
+    }
+    navMenu.addEventListener("click", function(e){ e.stopPropagation(); toggleMenu(); });
+    navMenuDiv.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){ toggleMenu(false); }); });
 
-        if (scrollpos > 10) {
-          header.classList.add("bg-white");
-          navaction.classList.remove("bg-white");
-          navaction.classList.add("gradient");
-          navaction.classList.remove("text-gray-800");
-          navaction.classList.add("text-white");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-gray-800");
-            toToggle[i].classList.remove("text-white");
-          }
-          header.classList.add("shadow");
-          navcontent.classList.remove("bg-gray-100");
-          navcontent.classList.add("bg-white");
-        } else {
-          header.classList.remove("bg-white");
-          navaction.classList.remove("gradient");
-          navaction.classList.add("bg-white");
-          navaction.classList.remove("text-white");
-          navaction.classList.add("text-gray-800");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-white");
-            toToggle[i].classList.remove("text-gray-800");
-          }
+    // Scroll reveal
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("visible"); io.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
 
-          header.classList.remove("shadow");
-          navcontent.classList.remove("bg-white");
-          navcontent.classList.add("bg-gray-100");
-        }
-      });
-    </script>
-    <script>
-      var navMenuDiv = document.getElementById("nav-content");
-      var navMenu = document.getElementById("nav-toggle");
-
-      document.onclick = check;
-      function check(e) {
-        var target = (e && e.target) || (event && event.srcElement);
-
-        //Nav Menu
-        if (!checkParent(target, navMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, navMenu)) {
-            // click on the link
-            if (navMenuDiv.classList.contains("hidden")) {
-              navMenuDiv.classList.remove("hidden");
-            } else {
-              navMenuDiv.classList.add("hidden");
-            }
-          } else {
-            // click both outside link and outside menu, hide menu
-            navMenuDiv.classList.add("hidden");
-          }
-        }
-      }
-      function checkParent(t, elm) {
-        while (t.parentNode) {
-          if (t == elm) {
-            return true;
-          }
-          t = t.parentNode;
-        }
-        return false;
-      }
-    </script>
-    <script
-      defer
-      data-domain="ritafaria.com"
-      src="https://api.ritafaria.com/js/script.js"
-    ></script>
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c3b82a41ebf4481784022e18a0f41741"}'></script>
-  </body>
+    // Header shadow on scroll
+    var header = document.getElementById("header");
+    document.addEventListener("scroll", function(){
+      header.classList.toggle("shadow-card", window.scrollY > 10);
+    }, { passive: true });
+  </script>
+  <script defer data-domain="ritafaria.com" src="https://api.ritafaria.com/js/script.js"></script>
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c3b82a41ebf4481784022e18a0f41741"}'></script>
+</body>
 </html>
